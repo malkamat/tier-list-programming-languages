@@ -1,0 +1,149 @@
+/* Mini reset css */
+* {
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+
+/* Body  et règles générales*/
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(150,96,196);
+    background: linear-gradient(130deg, rgba(150,96,196,1) 0%, rgba(83,114,214,1) 100%);
+}
+img {
+    width: 70px;
+    height: 100%;
+    object-fit: cover;
+    cursor: grab;
+}
+
+/* Header */
+
+.header  {
+    padding: 40px 0;
+}
+
+h1 {
+    text-align: center;
+    color: #F1F1F1
+}
+
+
+/* Main Container */
+
+
+.main-container {
+    max-width: 1200px;
+    width: 80%;
+    min-height: 600px;
+    height: auto;
+    background: black;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 1fr repeat(5);
+    row-gap: 6px;
+    padding: 6px;
+}
+
+@media only screen and (max-width: 600px) {
+    .main-container {
+        width: 94%;
+    }
+}
+
+/* Container des lignes */
+
+.container {
+    min-height: 70px;
+    height: auto;
+    display: flex;
+    background: #333;
+}
+
+/* Partie gauche du container d'un rank*/
+
+.container-left {
+    min-width: 70px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+/* Couleur des ranks */
+
+.background-s {
+    background: #fc676d;
+
+}
+.background-a {
+    background: #ffb26e;
+
+}
+.background-b {
+    background: #ffd96e;
+
+}
+.background-c {
+    background: #fdff6d;
+}
+.background-d {
+    background: #b4ff6c;
+}
+.background-e {
+    background: #71ff6b;
+}
+
+
+p {
+    color: #000000;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Partie droite du container d'un rank*/
+
+.container-right {
+    width: 100%;
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(auto-fill,70px);
+    gap: 1px;
+}
+
+
+
+/* Section avec les images des languages de programation */
+section {
+    margin-top: 20px;
+}
+h2 {
+    text-align: center;
+
+}
+.container-items {
+
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    width: 80%;
+    justify-content: space-between;
+    margin: 30px auto 0;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    height: 50px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer p {
+    font-size: 0.9rem;
+    color: #F1F1F1;
+}
